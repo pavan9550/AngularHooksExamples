@@ -34,6 +34,21 @@ Same Concepts holds for Directives Also
 
 
 Q> How to Access the Projected Content in the Child Component???
+A> Using a Property with "@ContentChild('reference_Name')" Decorator. 
+
+Example::  Need to Access the Projected Content [ Need to Access the Paragraph Element in Below Example ]
+
+  HtmlFile:
+  =========
+  <ChildComponent>
+  <p #paragraph> This is a Paragraph </p>
+  </ChildComponent>
+
+
+  TS File:
+  ========
+
+  @ContentChild('paragraph') projectedContent : ElementRef;
 
 
 
